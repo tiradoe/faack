@@ -9,43 +9,28 @@ pub struct ApiResponse {
 }
 
 pub async fn absolutely(company: &str, from: &str) -> ApiResponse {
-    if let Ok(data) = request(format!("{}/absolutely/{}/{}", FOAAS_HOST, company, from)).await {
-        return data;
-    } else {
-        panic!("Request failed.")
-    }
+    let response = request(format!("{}/absolutely/{}/{}", FOAAS_HOST, company, from)).await;
+    get_message(response)
 }
 
 pub async fn anyway(company: &str, from: &str) -> ApiResponse {
-    if let Ok(data) = request(format!("{}/anyway/{}/{}", FOAAS_HOST, company, from)).await {
-        return data;
-    } else {
-        panic!("Request failed.")
-    }
+    let response = request(format!("{}/anyway/{}/{}", FOAAS_HOST, company, from)).await;
+    get_message(response)
 }
 
 pub async fn asshole(from: &str) -> ApiResponse {
-    if let Ok(data) = request(format!("{}/asshole/{}", FOAAS_HOST, from)).await {
-        return data;
-    } else {
-        panic!("Request failed.")
-    }
+    let response = request(format!("{}/asshole/{}", FOAAS_HOST, from)).await;
+    get_message(response)
 }
 
 pub async fn awesome(from: &str) -> ApiResponse {
-    if let Ok(data) = request(format!("{}/awesome/{}", FOAAS_HOST, from)).await {
-        return data;
-    } else {
-        panic!("Request failed.")
-    }
+    let response = request(format!("{}/awesome/{}", FOAAS_HOST, from)).await;
+    get_message(response)
 }
 
 pub async fn back(name: &str, from: &str) -> ApiResponse {
-    if let Ok(data) = request(format!("{}/back/{}/{}", FOAAS_HOST, name, from)).await {
-        return data;
-    } else {
-        panic!("Request failed.")
-    }
+    let response = request(format!("{}/back/{}/{}", FOAAS_HOST, name, from)).await;
+    get_message(response)
 }
 
 async fn request(url: String) -> Result<ApiResponse, Box<dyn std::error::Error>> {
@@ -62,6 +47,16 @@ async fn request(url: String) -> Result<ApiResponse, Box<dyn std::error::Error>>
             Ok(parsed) => Ok(parsed),
             Err(error) => Err(Box::from(error)),
         },
-        other => panic!("Request failed: {}", other),
+        other => Err(Box::from(format!("{}", other))),
+    }
+}
+
+fn get_message(response: Result<ApiResponse, Box<dyn std::error::Error>>) -> ApiResponse {
+    match response {
+        Ok(data) => data,
+        Err(error) => ApiResponse {
+            message: format!("Error: {}", error),
+            subtitle: String::from("error"),
+        },
     }
 }
