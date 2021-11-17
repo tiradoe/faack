@@ -267,3 +267,283 @@ pub async fn horse(from: &str) -> ApiResponse {
     let response = request(format!("{}/horse/{}", FOAAS_HOST, from)).await;
     get_message(response)
 }
+
+pub async fn idea(from: &str) -> ApiResponse {
+    let response = request(format!("{}/idea/{}", FOAAS_HOST, from)).await;
+    get_message(response)
+}
+
+pub async fn immensity(from: &str) -> ApiResponse {
+    let response = request(format!("{}/immensity/{}", FOAAS_HOST, from)).await;
+    get_message(response)
+}
+
+pub async fn ing(name: &str, from: &str) -> ApiResponse {
+    let response = request(format!("{}/ing/{}/{}", FOAAS_HOST, name, from)).await;
+    get_message(response)
+}
+
+pub async fn jingle_bells(from: &str) -> ApiResponse {
+    let response = request(format!("{}/jinglebells/{}", FOAAS_HOST, from)).await;
+    get_message(response)
+}
+
+pub async fn keep(name: &str, from: &str) -> ApiResponse {
+    let response = request(format!("{}/keep/{}/{}", FOAAS_HOST, name, from)).await;
+    get_message(response)
+}
+
+pub async fn keep_calm(reaction: &str, from: &str) -> ApiResponse {
+    let response = request(format!("{}/keepcalm/{}/{}", FOAAS_HOST, reaction, from)).await;
+    get_message(response)
+}
+
+pub async fn king(name: &str, from: &str) -> ApiResponse {
+    let response = request(format!("{}/king/{}/{}", FOAAS_HOST, name, from)).await;
+    get_message(response)
+}
+
+pub async fn legend(name: &str, from: &str) -> ApiResponse {
+    let response = request(format!("{}/legend/{}/{}", FOAAS_HOST, name, from)).await;
+    get_message(response)
+}
+
+pub async fn life(from: &str) -> ApiResponse {
+    let response = request(format!("{}/life/{}", FOAAS_HOST, from)).await;
+    get_message(response)
+}
+
+pub async fn linus(name: &str, from: &str) -> ApiResponse {
+    let response = request(format!("{}/linus/{}/{}", FOAAS_HOST, name, from)).await;
+    get_message(response)
+}
+
+pub async fn logs(from: &str) -> ApiResponse {
+    let response = request(format!("{}/logs/{}", FOAAS_HOST, from)).await;
+    get_message(response)
+}
+
+pub async fn look(name: &str, from: &str) -> ApiResponse {
+    let response = request(format!("{}/look/{}/{}", FOAAS_HOST, name, from)).await;
+    get_message(response)
+}
+
+pub async fn looking(from: &str) -> ApiResponse {
+    let response = request(format!("{}/looking/{}", FOAAS_HOST, from)).await;
+    get_message(response)
+}
+
+pub async fn low_poly(from: &str) -> ApiResponse {
+    let response = request(format!("{}/lowpoly/{}", FOAAS_HOST, from)).await;
+    get_message(response)
+}
+
+pub async fn madison(name: &str, from: &str) -> ApiResponse {
+    let response = request(format!("{}/madison/{}/{}", FOAAS_HOST, name, from)).await;
+    get_message(response)
+}
+
+pub async fn maybe(from: &str) -> ApiResponse {
+    let response = request(format!("{}/maybe/{}", FOAAS_HOST, from)).await;
+    get_message(response)
+}
+
+pub async fn me(from: &str) -> ApiResponse {
+    let response = request(format!("{}/me/{}", FOAAS_HOST, from)).await;
+    get_message(response)
+}
+
+pub async fn mornin(from: &str) -> ApiResponse {
+    let response = request(format!("{}/mornin/{}", FOAAS_HOST, from)).await;
+    get_message(response)
+}
+
+pub async fn no(from: &str) -> ApiResponse {
+    let response = request(format!("{}/no/{}", FOAAS_HOST, from)).await;
+    get_message(response)
+}
+
+pub async fn nugget(name: &str, from: &str) -> ApiResponse {
+    let response = request(format!("{}/nugget/{}/{}", FOAAS_HOST, name, from)).await;
+    get_message(response)
+}
+
+pub async fn off(name: &str, from: &str) -> ApiResponse {
+    let response = request(format!("{}/off/{}/{}", FOAAS_HOST, name, from)).await;
+    get_message(response)
+}
+
+pub async fn off_with(behavior: &str, from: &str) -> ApiResponse {
+    let response = request(format!("{}/off-with/{}/{}", FOAAS_HOST, behavior, from)).await;
+    get_message(response)
+}
+
+pub async fn outside(name: &str, from: &str) -> ApiResponse {
+    let response = request(format!("{}/outside/{}/{}", FOAAS_HOST, name, from)).await;
+    get_message(response)
+}
+
+pub async fn particular(thing: &str, from: &str) -> ApiResponse {
+    let response = request(format!("{}/particular/{}/{}", FOAAS_HOST, thing, from)).await;
+    get_message(response)
+}
+
+pub async fn pink(from: &str) -> ApiResponse {
+    let response = request(format!("{}/pink/{}", FOAAS_HOST, from)).await;
+    get_message(response)
+}
+
+pub async fn problem(name: &str, from: &str) -> ApiResponse {
+    let response = request(format!("{}/problem/{}/{}", FOAAS_HOST, name, from)).await;
+    get_message(response)
+}
+
+pub async fn programmer(from: &str) -> ApiResponse {
+    let response = request(format!("{}/programmer/{}", FOAAS_HOST, from)).await;
+    get_message(response)
+}
+
+pub async fn pulp(language: &str, from: &str) -> ApiResponse {
+    let response = request(format!("{}/pulp/{}/{}", FOAAS_HOST, language, from)).await;
+    get_message(response)
+}
+
+pub async fn question(from: &str) -> ApiResponse {
+    let response = request(format!("{}/question/{}", FOAAS_HOST, from)).await;
+    get_message(response)
+}
+
+pub async fn rats_arse(from: &str) -> ApiResponse {
+    let response = request(format!("{}/ratsarse/{}", FOAAS_HOST, from)).await;
+    get_message(response)
+}
+
+pub async fn retard(from: &str) -> ApiResponse {
+    let response = request(format!("{}/retard/{}", FOAAS_HOST, from)).await;
+    get_message(response)
+}
+
+pub async fn ridiculous(from: &str) -> ApiResponse {
+    let response = request(format!("{}/ridiculous/{}", FOAAS_HOST, from)).await;
+    get_message(response)
+}
+
+pub async fn rockstar(name: &str, from: &str) -> ApiResponse {
+    let response = request(format!("{}/rockstar/{}/{}", FOAAS_HOST, name, from)).await;
+    get_message(response)
+}
+
+pub async fn rtfm(from: &str) -> ApiResponse {
+    let response = request(format!("{}/rtfm/{}", FOAAS_HOST, from)).await;
+    get_message(response)
+}
+
+pub async fn sake(from: &str) -> ApiResponse {
+    let response = request(format!("{}/sake/{}", FOAAS_HOST, from)).await;
+    get_message(response)
+}
+
+pub async fn shakespeare(name: &str, from: &str) -> ApiResponse {
+    let response = request(format!("{}/shakespeare/{}/{}", FOAAS_HOST, name, from)).await;
+    get_message(response)
+}
+
+pub async fn shit(from: &str) -> ApiResponse {
+    let response = request(format!("{}/shit/{}", FOAAS_HOST, from)).await;
+    get_message(response)
+}
+
+pub async fn shutup(name: &str, from: &str) -> ApiResponse {
+    let response = request(format!("{}/shutup/{}/{}", FOAAS_HOST, name, from)).await;
+    get_message(response)
+}
+
+pub async fn single(from: &str) -> ApiResponse {
+    let response = request(format!("{}/single/{}", FOAAS_HOST, from)).await;
+    get_message(response)
+}
+
+pub async fn thanks(from: &str) -> ApiResponse {
+    let response = request(format!("{}/thanks/{}", FOAAS_HOST, from)).await;
+    get_message(response)
+}
+
+pub async fn that(from: &str) -> ApiResponse {
+    let response = request(format!("{}/that/{}", FOAAS_HOST, from)).await;
+    get_message(response)
+}
+
+pub async fn think(name: &str, from: &str) -> ApiResponse {
+    let response = request(format!("{}/think/{}/{}", FOAAS_HOST, name, from)).await;
+    get_message(response)
+}
+
+pub async fn thinking(name: &str, from: &str) -> ApiResponse {
+    let response = request(format!("{}/thinking/{}/{}", FOAAS_HOST, name, from)).await;
+    get_message(response)
+}
+
+pub async fn this(from: &str) -> ApiResponse {
+    let response = request(format!("{}/this/{}", FOAAS_HOST, from)).await;
+    get_message(response)
+}
+
+pub async fn thumbs(name: &str, from: &str) -> ApiResponse {
+    let response = request(format!("{}/thumbs/{}/{}", FOAAS_HOST, name, from)).await;
+    get_message(response)
+}
+
+pub async fn too(from: &str) -> ApiResponse {
+    let response = request(format!("{}/too/{}", FOAAS_HOST, from)).await;
+    get_message(response)
+}
+
+pub async fn tucker(from: &str) -> ApiResponse {
+    let response = request(format!("{}/tucker/{}", FOAAS_HOST, from)).await;
+    get_message(response)
+}
+
+pub async fn understand(name: &str, from: &str) -> ApiResponse {
+    let response = request(format!("{}/understand/{}/{}", FOAAS_HOST, name, from)).await;
+    get_message(response)
+}
+
+pub async fn waste(name: &str, from: &str) -> ApiResponse {
+    let response = request(format!("{}/waste/{}/{}", FOAAS_HOST, name, from)).await;
+    get_message(response)
+}
+
+pub async fn what(from: &str) -> ApiResponse {
+    let response = request(format!("{}/what/{}", FOAAS_HOST, from)).await;
+    get_message(response)
+}
+
+pub async fn xmas(name: &str, from: &str) -> ApiResponse {
+    let response = request(format!("{}/xmas/{}/{}", FOAAS_HOST, name, from)).await;
+    get_message(response)
+}
+
+pub async fn yeah(from: &str) -> ApiResponse {
+    let response = request(format!("{}/yeah/{}", FOAAS_HOST, from)).await;
+    get_message(response)
+}
+
+pub async fn yoda(name: &str, from: &str) -> ApiResponse {
+    let response = request(format!("{}/yoda/{}/{}", FOAAS_HOST, name, from)).await;
+    get_message(response)
+}
+
+pub async fn you(name: &str, from: &str) -> ApiResponse {
+    let response = request(format!("{}/you/{}/{}", FOAAS_HOST, name, from)).await;
+    get_message(response)
+}
+
+pub async fn zayn(from: &str) -> ApiResponse {
+    let response = request(format!("{}/zayn/{}", FOAAS_HOST, from)).await;
+    get_message(response)
+}
+
+pub async fn zero(from: &str) -> ApiResponse {
+    let response = request(format!("{}/zero/{}", FOAAS_HOST, from)).await;
+    get_message(response)
+}
